@@ -103,6 +103,14 @@ module top_module(
     //             sum[i]  = a[i] ^ b[i] ^ cout[i-1];
     //     end
     // end
+    // 类似的，但是更优雅的方法
+    // always @(*)begin
+    //     for(integer i=1;i<100;i++)begin
+    //         {cout[0],sum[0]} = (a[0]+b[0]+cin);
+    //         {cout[i],sum[i]} = (a[i]+b[i]+cout[i-1]);
+    //     end
+    // end
+
 
 
 endmodule
